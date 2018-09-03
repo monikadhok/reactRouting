@@ -1,0 +1,6 @@
+import { json } from 'micro'
+
+module.exports = async req => {
+  console.log(await json(req))
+  return 200
+}
